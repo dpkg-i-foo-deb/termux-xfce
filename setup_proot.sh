@@ -1,13 +1,13 @@
 #!/bin/sh
 
-clear
+#clear
 echo "Installing Debian using proot-distro"
 
 sleep 2
 
 proot-distro install debian
 
-clear
+#clear
 read -r -p "Please enter username for proot installation: " username </dev/tty
 
 proot-distro install debian
@@ -32,7 +32,7 @@ proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 cp /usr/share/zoneinf
 
 cp ~/../usr/var/lib/proot-distro/installed-rootfs/debian/etc/skel/.bashrc ~/.bashrc
 
-clear
+#clear
 echo "Setting up audio & aliases"
 sleep 2
 

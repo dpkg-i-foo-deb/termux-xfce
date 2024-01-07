@@ -1,12 +1,12 @@
 #!/bin/sh
-clear
+#clear
 echo "Installing Termux-X11 package"
 
 sleep 2
 
 pkg install termux-x11-nightly -y
 
-clear
+#clear
 echo "Installing Termux-X11 Android package"
 
 sleep 2

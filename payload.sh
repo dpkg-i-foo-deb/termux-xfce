@@ -1,6 +1,6 @@
 #!/bin/sh
 
-clear
+#clear
 echo "Installing git..."
 
 sleep 2
@@ -8,7 +8,7 @@ sleep 2
 apt update
 apt install git -y
 
-clear
+#clear
 echo "Cloning repository"
 
 sleep 2

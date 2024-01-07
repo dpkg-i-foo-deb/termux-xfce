@@ -11,6 +11,6 @@ chmod +x start.sh
 
 cp start.sh ~/../usr/bin/start-de
 
-chmox +x stop.sh
+chmod +x stop.sh
 
 cp stop.sh ~/../usr/bin/stop-de
