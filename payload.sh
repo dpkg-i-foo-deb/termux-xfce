@@ -1,5 +1,11 @@
 #!/bin/sh
 
+echo "Updating packages"
+sleep 2
+
+pkg update -y -o Dpkg::Options::="--force-confold"
+pkg upgrade -y -o Dpkg::Options::="--force-confold"
+
 echo "Updating repositories"
 termux-change-repo
 
