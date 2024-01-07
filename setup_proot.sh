@@ -6,7 +6,7 @@ pkg install proot-distro -y
 #clear
 echo "Installing Debian using proot-distro"
 
-sleep 2
+sleep 5
 
 proot-distro install debian
 
@@ -36,7 +36,7 @@ cp ~/../usr/var/lib/proot-distro/installed-rootfs/debian/etc/skel/.bashrc ~/.bas
 
 #clear
 echo "Setting up audio & aliases"
-sleep 2
+sleep 5
 
 echo "
 pulseaudio --start --exit-idle-time=-1

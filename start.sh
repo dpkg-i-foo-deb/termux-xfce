@@ -2,7 +2,7 @@
 
 #clear
 echo "Starting XFCE and Termux-X11"
-sleep 2
+sleep 5
 
 MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 virgl_test_server_android --angle-gl &
 >/dev/null 2>&1

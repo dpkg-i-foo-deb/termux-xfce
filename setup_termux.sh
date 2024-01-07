@@ -2,7 +2,7 @@
 
 #clear
 echo "Setting up storage and updating repositories..."
-sleep 2
+sleep 5
 
 termux-setup-storage
 

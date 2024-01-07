@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Updating packages"
-sleep 2
+sleep 5
 
 pkg update -y -o Dpkg::Options::="--force-confold"
 pkg upgrade -y -o Dpkg::Options::="--force-confold"
@@ -12,7 +12,7 @@ termux-change-repo
 #clear
 echo "Installing git..."
 
-sleep 2
+sleep 5
 
 apt update
 apt install git -y
@@ -20,7 +20,7 @@ apt install git -y
 #clear
 echo "Cloning repository"
 
-sleep 2
+sleep 5
 
 git clone https://github.com/dpkg-i-foo-deb/termux-xfce.git
 
