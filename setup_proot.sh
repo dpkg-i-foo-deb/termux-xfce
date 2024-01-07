@@ -13,7 +13,6 @@ proot-distro install debian
 #clear
 read -r -p "Please enter username for proot installation: " username </dev/tty
 
-proot-distro install debian
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt update
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt upgrade -y
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install sudo wget jq -y
