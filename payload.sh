@@ -5,7 +5,8 @@ echo "Installing git..."
 
 sleep 2
 
-pkg update && pkg install git -y
+pkg update
+pkg install git -y
 
 clear
 echo "Cloning repository"
@@ -17,3 +18,7 @@ git clone https://github.com/dpkg-i-foo-deb/termux-xfce.git
 cd termux-xfce || exit
 
 ./main.sh
+
+cd ..
+
+rm -rf termux-xfce

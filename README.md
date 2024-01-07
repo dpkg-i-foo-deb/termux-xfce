@@ -8,6 +8,4 @@ https://github.com/phoenixbyrd/Termux_XFCE
 
 # Installing
 
-`wget -O - https://raw.githubusercontent.com/dpkg-i-foo-deb/termux-xfce/main/payload.sh | sh`
-
 `curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/dpkg-i-foo-deb/termux-xfce/main/payload.sh | sh`
