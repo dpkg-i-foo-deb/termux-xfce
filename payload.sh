@@ -5,8 +5,8 @@ echo "Installing git..."
 
 sleep 2
 
-pkg update
-pkg install git -y
+apt update
+apt install git -y
 
 clear
 echo "Cloning repository"
