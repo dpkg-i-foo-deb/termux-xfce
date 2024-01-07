@@ -13,6 +13,6 @@ sleep 2
 
 #Original Android package from https://github.com/termux/termux-x11/releases/tag/nightly
 
-cp app-universal.debug.apk ~/storage/downloads/termux-x11.apk
+cp app-universal-debug.apk ~/storage/downloads/termux-x11.apk
 
 termux-open ~/storage/downloads/termux-x11.apk
