@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Updating repositories"
+termux-change-repo
+
 #clear
 echo "Installing git..."
 

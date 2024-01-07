@@ -5,7 +5,6 @@ echo "Setting up storage and updating repositories..."
 sleep 2
 
 termux-setup-storage
-termux-change-repo
 
 mkdir -p ~/Desktop
 mkdir -p ~/Downloads
