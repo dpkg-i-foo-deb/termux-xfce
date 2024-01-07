@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Installing proot-distro"
+pkg install proot-distro -y
+
 #clear
 echo "Installing Debian using proot-distro"
 
