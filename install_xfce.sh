@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#clear
+clear
 echo "Installing xfce..."
 sleep 5
 

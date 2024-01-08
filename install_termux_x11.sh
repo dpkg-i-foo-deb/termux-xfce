@@ -1,18 +1,20 @@
 #!/bin/sh
-#clear
+clear
 echo "Installing Termux-X11 package"
 
 sleep 5
 
 pkg install termux-x11-nightly -y
 
-#clear
+clear
 
 echo "Allowing external apps to be installed"
 
 sleep 5
 
 sed -i '12s/^#//' ~/.termux/termux.properties
+
+clear
 
 echo "Installing Termux-X11 Android package"
 

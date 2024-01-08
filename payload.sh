@@ -9,7 +9,7 @@ pkg upgrade -y -o Dpkg::Options::="--force-confold"
 echo "Updating repositories"
 termux-change-repo
 
-#clear
+clear
 echo "Installing git..."
 
 sleep 5
@@ -17,7 +17,7 @@ sleep 5
 apt update
 apt install git -y
 
-#clear
+clear
 echo "Cloning repository"
 
 sleep 5

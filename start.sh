@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#clear
+clear
 echo "Starting XFCE and Termux-X11"
 sleep 5
 

@@ -3,19 +3,20 @@
 echo "Installing proot-distro"
 pkg install proot-distro -y
 
-#clear
+clear
 echo "Installing Debian using proot-distro"
 
 sleep 5
 
 proot-distro install debian
 
-#clear
+clear
 read -r -p "Please enter username for proot installation: " username </dev/tty
 
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt update
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install apt-utils -y
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt upgrade -y
-proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install sudo wget jq -y
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install sudo wget -y
 
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 groupadd storage
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 groupadd wheel
@@ -34,7 +35,7 @@ proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 cp /usr/share/zoneinf
 
 cp ~/../usr/var/lib/proot-distro/installed-rootfs/debian/etc/skel/.bashrc ~/.bashrc
 
-#clear
+clear
 echo "Setting up audio & aliases"
 sleep 5
 

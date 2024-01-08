@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#clear
+clear
 echo "Setting up storage and updating repositories..."
 sleep 5
 
